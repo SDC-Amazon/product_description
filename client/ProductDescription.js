@@ -14,6 +14,12 @@ function ProductDescription(props) {
             </div>
             
             <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-empty "></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                
             {props.item.stars} / out of 5 stars
             </div>
             
