@@ -7,20 +7,24 @@ class App extends React.Component {
         super(props);
         this.state = {
             value: 'Hi',
-            item: ['']
+            item: [''],
+            id: 3
         }
     }
 
     componentDidMount() {
-        console.log('Hello');
-        axios.get('/cats')
-            .then((response)=> {
-                console.log(response.data);
-                this.setState({item:response.data[0]})
-            })
-            .catch(((error)=> {
-                console.log(error)
-            }))
+        this.getItem()
+    }
+
+    getItem() {
+        axios.get('/cats', {params: {id: this.state.id}} )
+        .then((response)=> {
+            //console.log(response.data);
+            this.setState({item:response.data[0]})
+        })
+        .catch(((error)=> {
+            console.log(error)
+        }))
     }
 
     render() {

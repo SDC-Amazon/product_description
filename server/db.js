@@ -205,7 +205,7 @@ const getItem = (id, callback)  => {
         if (err) {
             callback(err, null)
         } else {
-            console.log(results);
+            //console.log(results);
             callback(null, results)
         }
     
