@@ -1,9 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var faker = require('faker');
 
+//faker stuff
+var faker = require('faker');
 var temp = faker.name.findName();
 console.log(temp);
+
+mongoose.connect('mongodb://localhost/productDescription', {useNewUrlParser: true});
 
 // for(var i =0; i< 10; i++) {
 //     {
@@ -37,7 +40,7 @@ var prodDescSchema = new Schema({
 
 var Descriptions = mongoose.model("ProductDescriptions", prodDescSchema);
 
-var amishon = new Descriptions({
+var amishonArray = [{
     id: 1,
     title:  'Sweet Amish Vest',
     seller: 'Geoberti',
@@ -180,6 +183,35 @@ var amishon = new Descriptions({
         'Ingredients: Apples, Cider, Sugar, Cinnamon, and Citric Acid']
         }
 
-);
+    ];
 
 
+    // Descriptions.insertMany(amishonArray, (err, res) => {
+    //     if (err) {
+    //         console.log(err)
+    //     } else {
+    //         console.log('successfully seeded!');
+    //     }
+    // });
+    
+// const getAll = (callback) => {
+//     console.log()
+// }
+
+
+
+const getItem = (id, callback)  => {
+    Descriptions.find( {id: id}, (err, results) => {
+        if (err) {
+            callback(err, null)
+        } else {
+            console.log(results);
+            callback(null, results)
+        }
+    
+    })
+}
+
+module.exports = {
+    getItem
+}

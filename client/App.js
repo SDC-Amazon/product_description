@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class App extends React.Component {
     constructor(props) {
@@ -6,6 +7,17 @@ class App extends React.Component {
         this.state = {
             value: 'Hi'
         }
+    }
+
+    componentDidMount() {
+        console.log('Hello');
+        axios.get('/cats')
+            .then((response)=> {
+                console.log(response.data);
+            })
+            .catch(((error)=> {
+                console.log(error)
+            }))
     }
 
     render() {
