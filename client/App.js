@@ -2,13 +2,30 @@ import React from 'react';
 import axios from 'axios';
 import ProductDescription from './ProductDescription.js'
 
+
+const dummydata = {
+    id: 28,
+    title:  'Amish Wedding Foods - Apple Butter',
+    seller: 'Amish Wedding Foods',
+    stars: 4.5,
+    number_ratings: 17,
+    prime: true,
+    options: [{
+        option: '2-pack',
+        price: 18.99
+    }],
+    description: ['Old Fashioned Apple Butter',
+    'Made in Holmes County, Ohio',
+    'All Natural',
+    'Ingredients: Apples, Cider, Sugar, Cinnamon, and Citric Acid']
+    }
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             value: 'Hi',
-            item: [''],
-            id: 3
+            item: dummydata,
+            id: 2
         }
     }
 
@@ -19,7 +36,7 @@ class App extends React.Component {
     getItem() {
         axios.get('/cats', {params: {id: this.state.id}} )
         .then((response)=> {
-            //console.log(response.data);
+            //console.log(response.data[0]);
             this.setState({item:response.data[0]})
         })
         .catch(((error)=> {

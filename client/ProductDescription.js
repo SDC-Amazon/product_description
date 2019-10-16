@@ -1,6 +1,8 @@
 import React from 'react';
 
 function ProductDescription(props) {
+    //console.log('sup')
+    //console.log(props.item.options[0].option)
     return (
         <div>
             
@@ -22,6 +24,15 @@ function ProductDescription(props) {
 
             <div>
             Options
+            <div>
+                <select>
+                    <option>Select</option>
+                    {props.item.options.map( (item) => (
+                        <option key={item.option}> {item.option} </option>
+                    ))}
+                </select>
+            </div>
+                    
             </div>
 
         </div>
