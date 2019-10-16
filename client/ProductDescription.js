@@ -11,7 +11,7 @@ function ProductDescription(props) {
             </div>
             
             <div> 
-            by: {props.item.seller}
+            seller: {props.item.seller}
             </div>
             
             <div>
@@ -24,15 +24,22 @@ function ProductDescription(props) {
 
             <div>
             Options
+            </div>
+
             <div>
                 <select>
-                    <option>Select</option>
                     {props.item.options.map( (item) => (
                         <option key={item.option}> {item.option} </option>
                     ))}
                 </select>
             </div>
                     
+            <div>
+            <ul>
+                    {props.item.description.map((row)=> (
+                        <li>{row}</li>
+                    ))}
+            </ul>
             </div>
 
         </div>
