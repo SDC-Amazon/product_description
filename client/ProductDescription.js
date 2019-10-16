@@ -1,16 +1,15 @@
 import React from 'react';
 
 function ProductDescription(props) {
-    //console.log('sup')
-    //console.log(props.item.options[0].option)
+
     return (
         <div>
             
-            <div>
+            <div id="p01">
             {props.item.title}
             </div>
             
-            <div> 
+            <div id="p02"> 
             seller: {props.item.seller}
             </div>
             
@@ -18,12 +17,19 @@ function ProductDescription(props) {
             {props.item.stars} / out of 5 stars
             </div>
             
-            <div>
-            {props.item.number_ratings} ratings
+            <div id="ratings">
+            {props.item.number_ratings} people destroyed this product (ratings)
             </div>
 
+            <div id="price">
+            Price:  {props.item.options[0].price}
+            </div>
+
+            <div id="ad">
+            Get $70 off instantly: Pay $0.00 upon approval for the Amazon Prime Rewards Visa Card. No annual fee.
+            </div>
             <div>
-            Options
+            Options 
             </div>
 
             <div>
@@ -34,10 +40,10 @@ function ProductDescription(props) {
                 </select>
             </div>
                     
-            <div>
+            <div id="list">
             <ul>
                     {props.item.description.map((row)=> (
-                        <li>{row}</li>
+                        <li key={row}>{row}</li>
                     ))}
             </ul>
             </div>

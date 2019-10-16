@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import ProductDescription from './ProductDescription.js'
 
-
 const dummydata = {
     id: 28,
     title:  'Amish Wedding Foods - Apple Butter',
@@ -25,7 +24,8 @@ class App extends React.Component {
         this.state = {
             value: 'Hi',
             item: dummydata,
-            id: 2
+            id: 1,
+            option: ''
         }
     }
 
