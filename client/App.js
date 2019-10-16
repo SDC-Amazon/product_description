@@ -1,11 +1,13 @@
 import React from 'react';
 import axios from 'axios';
+import ProductDescription from './ProductDescription.js'
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 'Hi'
+            value: 'Hi',
+            item: ['']
         }
     }
 
@@ -14,6 +16,7 @@ class App extends React.Component {
         axios.get('/cats')
             .then((response)=> {
                 console.log(response.data);
+                this.setState({item:response.data[0]})
             })
             .catch(((error)=> {
                 console.log(error)
@@ -24,6 +27,9 @@ class App extends React.Component {
         return ( 
             <div>
                 <h1> Hello  AMIShON</h1>
+                <div>
+                <ProductDescription item={this.state.item}/>
+                </div>
             </div>
         )
     }
