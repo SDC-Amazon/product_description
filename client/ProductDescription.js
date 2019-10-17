@@ -1,7 +1,8 @@
 import React from 'react';
+import Stars from './Stars.js';
 
 function ProductDescription(props) {
-    //console.log(props.item.stars.floor())
+    console.log(Math.floor(props.item.stars))
     return (
         <div>
             
@@ -14,6 +15,8 @@ function ProductDescription(props) {
             </div>
             
             <div>
+                {Math.floor(props.item.stars)}
+                <Stars stars={props.item.stars}/>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>

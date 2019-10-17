@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import ProductDescription from './ProductDescription.js'
+import ProductDescription from './ProductDescription.js';
+import Stars from './Stars.js';
 
 const dummydata = {
     id: 28,
