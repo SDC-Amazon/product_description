@@ -19,12 +19,12 @@ const Stars = (props) => {
 
     return (
         <div>
-            {array.map (stars=> (
+            {array.map ((stars, i)=> (
                 (stars === 1) 
-                ? <span className="fa fa-star checked" ></span> 
+                ? <span key={i} className="fa fa-star checked" ></span> 
                 : (stars === .5 
-                    ? <span className="fa fa-star-half-empty checked"></span>
-                    : <span className="fa fa-star-o checked"></span>
+                    ? <span key={i} className="fa fa-star-half-empty checked"></span>
+                    : <span key={i} className="fa fa-star-o checked"></span>
                 )
             ))}
         </div>

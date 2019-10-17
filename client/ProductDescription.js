@@ -30,7 +30,7 @@ function ProductDescription(props) {
             <div id="ad">
             Get $70 off instantly: Pay <span id="zero">$0.00</span> upon approval for the Amazon Prime Rewards Visa Card. No annual fee.
             </div>
-            
+
             <div>
             Options 
             </div>
@@ -44,9 +44,9 @@ function ProductDescription(props) {
                     
             <div id="list">
             <ul>
-                    {props.item.description.map((row)=> (
-                        <li key={row}>{row}</li>
-                    ))}
+                {props.item.description.map((row)=> (
+                    <li key={row}>{row}</li>
+                ))}
             </ul>
             </div>
 
