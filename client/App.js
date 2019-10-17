@@ -24,12 +24,13 @@ class App extends React.Component {
         this.state = {
             value: 'Hi',
             item: dummydata,
-            id: 4,
+            id: 1,
             option: ''
         }
     }
 
     componentDidMount() {
+        document.productID = 1
         this.getItem()
     }
 

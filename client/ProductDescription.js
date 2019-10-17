@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ProductDescription(props) {
-
+    //console.log(props.item.stars.floor())
     return (
         <div>
             
@@ -10,11 +10,10 @@ function ProductDescription(props) {
             </div>
             
             <div id="p02"> 
-            seller: {props.item.seller}
+            <span id="plain-text">seller:</span> {props.item.seller}
             </div>
             
             <div>
-                
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -29,11 +28,11 @@ function ProductDescription(props) {
             </div>
 
             <div id="price">
-            Price:  ${props.item.options[0].price}
+            <span id="price-label">Price:</span>  ${props.item.options[0].price}
             </div>
 
             <div id="ad">
-            Get $70 off instantly: Pay $0.00 upon approval for the Amazon Prime Rewards Visa Card. No annual fee.
+            Get $70 off instantly: Pay <span id="zero">$0.00</span> upon approval for the Amazon Prime Rewards Visa Card. No annual fee.
             </div>
             <div>
             Options 

@@ -5,7 +5,7 @@
 }
 
 #p02 {
-    c
+    color: #0066c0;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
 }
@@ -35,4 +35,22 @@
 
 .checked {
     color: orange;
+}
+
+#plain-text {
+    color: #111;
+}
+
+#zero {
+    color: #B12704!important;
+}
+
+#strikeout {
+    style: "text-decoration:line-through";
+}
+
+#price-label {
+    color: #555555;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 13px;
 }
