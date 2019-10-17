@@ -15,14 +15,7 @@ function ProductDescription(props) {
             </div>
             
             <div>
-                {Math.floor(props.item.stars)}
                 <Stars stars={props.item.stars}/>
-                {/* <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-half-empty checked"></span> */}
-
             {props.item.stars} / out of 5 stars
             </div>
             
@@ -37,10 +30,10 @@ function ProductDescription(props) {
             <div id="ad">
             Get $70 off instantly: Pay <span id="zero">$0.00</span> upon approval for the Amazon Prime Rewards Visa Card. No annual fee.
             </div>
+            
             <div>
             Options 
             </div>
-
             <div>
                 <select>
                     {props.item.options.map( (item) => (
