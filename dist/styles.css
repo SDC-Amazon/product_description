@@ -2,35 +2,54 @@
     color:#111;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 21px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3!important;
+    font-weight: 400;
 }
 
 #p02 {
     color: #0066c0;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
+    margin-bottom: 0!important;
+    line-height: 19px;
+}
+#p02:hover {
+    text-decoration:underline;
 }
 
 #list {
     color: #111;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
+    line-height: 19px;
 }
 
 #ad {
     color: #0066c0;
     font-size: 13px;
+    margin-bottom: 10px!important;
+}
+
+#ad:hover {
+    text-decoration:underline;
 }
 
 #price {
     color: #B12704!important;
     font-size: 17px!important;
     font-family: "Amazon Ember",Arial,sans-serif;
+    margin-bottom: 10px!important;
 }
 
 #ratings {
     color: #0066c0;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px!important;
+}
+
+#ratings:hover {
+    text-decoration:underline;
 }
 
 .checked {
@@ -53,4 +72,7 @@
     color: #555555;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
+}
+#stars {
+    margin-bottom: 10px!important;
 }

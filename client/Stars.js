@@ -23,10 +23,11 @@ const Stars = (props) => {
                 (stars === 1) 
                 ? <span key={i} className="fa fa-star checked" ></span> 
                 : (stars === .5 
-                    ? <span key={i} className="fa fa-star-half-empty checked"></span>
-                    : <span key={i} className="fa fa-star-o checked"></span>
+                    ? <span key={i} className="fa fa-star-half-empty checked" ></span>
+                    : <span key={i} className="fa fa-star-o checked" ></span>
                 )
             ))}
+            <span>{props.stars} / out of 5 stars </span>
         </div>
     )
 }

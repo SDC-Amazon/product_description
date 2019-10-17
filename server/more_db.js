@@ -322,4 +322,39 @@ var amishonArray = [{
     }],
     description: ['Handcrafted by Amish woodworkers in our area<',
     'Stunning quality - no plastic parts<']
-}
+},
+{
+    id: 91,
+    title:  'Peaceful Classics Wooden Furniture 3-in-1 Childrens High Chair, Wooden Rocking Horse, Writing Desk Solid Oak Wood (Harvest)',
+    seller: 'Peaceful Classics',
+    stars: 234,
+    number_ratings: 4.8,
+    prime: true,
+    options: [{
+        option: 'Provvincial',
+        price: 289.00
+    },{
+        option: 'Harvest',
+        price: 269.00
+    }],
+    description: ['Size - Weight: 33 Pounds. Rocker: 16"W x 32"D x 18"H, Highchair: 16"W x 19"D x 32"H, Desk: 16"W x 32"D x 18"H',
+    'One Piece Of Amish Furniture, 3 Uses - This multi-purpose writing desk is uniquely designed to fit multiple functions in your home. Depending on what side you rest it on, this handcrafted Amish high chair for kids could also become a standing desk or a rocker.',
+    'Sturdy Oak High Chair- This high chair comes with a leather leg separator strap attached to a heavy wooden dowel across the center to ensure your baby chair is always safe and secure.',
+    'Durable Craftsmanship - This wooden horse chair is made of sturdy oak wood with a light harvest stain. Unlike flimsy or cheap options, this wood highchair desk combo will stand the test of time.',
+    'Amish Handmade Furniture - Made in Pennsylvania the same way for hundreds of years, this Amish furniture will stand the test of time. Our Amish Craftsmen are some of the most incredible people you come across. These Lancaster County craftsman may not have their name plastered on the furniture, but each craftsman has their story that is built into each piece.']
+},
+{
+    id: 90,
+    title:  'Amish Buggy Toys Wooden Car Vertical Roller w/ Mini Wooden Cars, Walnut & Maple CPSIA Kid Safe Finish',
+    seller: 'Amish Buggy toys',
+    stars: 4.8,
+    number_ratings: 302,
+    prime: true,
+    options: [{
+        option: 'Walnut & Maple',
+        price: 43.99
+    }],
+    description: ['Amish made and sturdy enough to withstand years of play',
+    'Child-safe paints/ stains comply with all CPSIA standards',
+    'Great addition to any wooden toy collection']
+},

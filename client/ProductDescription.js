@@ -11,29 +11,30 @@ function ProductDescription(props) {
             </div>
             
             <div id="p02"> 
-            <span id="plain-text">seller:</span> {props.item.seller}
-            </div>
-            
-            <div>
-                <Stars stars={props.item.stars}/>
-            {props.item.stars} / out of 5 stars
+            <span id="plain-text"> seller:</span> {props.item.seller}
             </div>
             
             <div id="ratings">
-            {props.item.number_ratings} people destroyed this product (ratings)
+            {props.item.number_ratings} ratings
+            </div>
+            
+            <div id="stars">
+                <Stars stars={props.item.stars}/> 
+                <span> </span>
             </div>
 
             <div id="price">
-            <span id="price-label">Price:</span>  ${props.item.options[0].price}
+            <span id="price-label">Price:</span> ${props.item.options[0].price}
             </div>
 
-            <div id="ad">
+            <div id="ad" >
             Get $70 off instantly: Pay <span id="zero">$0.00</span> upon approval for the Amazon Prime Rewards Visa Card. No annual fee.
             </div>
 
             <div>
-            Options 
+                { (props.item.prime === true) ? <span>prime</span> : <span>not prime</span>}
             </div>
+
             <div>
                 <select>
                     {props.item.options.map( (item) => (
