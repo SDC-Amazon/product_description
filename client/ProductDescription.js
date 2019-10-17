@@ -24,7 +24,10 @@ function ProductDescription(props) {
             </div>
 
             <div id="price">
-            <span id="price-label">Price:</span> ${props.item.options[0].price}
+            <span id="price-label">Price:</span> ${props.item.options[0].price} 
+            { (props.item.prime === true) 
+                ? <span><img id ="logo" src="Amazon-Prime-Logo.jpg"/></span> 
+                : <span id="notPrime"> <strong >Note:</strong> Not eligible for Amazon Prime.</span>}
             </div>
 
             <div id="ad" >
@@ -32,7 +35,7 @@ function ProductDescription(props) {
             </div>
 
             <div>
-                { (props.item.prime === true) ? <span>prime</span> : <span>not prime</span>}
+                
             </div>
 
             <div>

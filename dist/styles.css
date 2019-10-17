@@ -76,3 +76,15 @@
 #stars {
     margin-bottom: 10px!important;
 }
+
+#logo {
+    width: 77px;
+    height: 32px;
+    vertical-align: baseline;
+}
+
+#notPrime {
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
+}
