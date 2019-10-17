@@ -2,7 +2,7 @@ import React from 'react';
 import Stars from './Stars.js';
 
 function ProductDescription(props) {
-    console.log(Math.floor(props.item.stars))
+    //console.log(props.item.stars)
     return (
         <div>
             
@@ -17,11 +17,11 @@ function ProductDescription(props) {
             <div>
                 {Math.floor(props.item.stars)}
                 <Stars stars={props.item.stars}/>
+                {/* <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-half-empty checked"></span>
+                <span class="fa fa-star-half-empty checked"></span> */}
 
             {props.item.stars} / out of 5 stars
             </div>

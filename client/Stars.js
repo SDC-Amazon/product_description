@@ -1,46 +1,39 @@
 import React from 'react';
 
-const starArray = [1,1,.5,0,0]
 
-class Stars extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            stars: starArray
-        }
+const Stars = (props) => {
 
+    var number = Math.floor(props.stars)
+    var decimal = props.stars - number;
+    var array = [0,0,0,0,0]
+
+    for (var i = 0; i < number; i++) {
+        array[i] = 1;
     }
-
-    componentDidMount() {
-        this.stuff()
+    if (0 <= decimal && decimal <= .2 )  {
+        array[number] = 0;
     }
-
-    stuff() {
-        const number = Math.floor(this.props.stars)
-        const decimal = this.props.stars - number;
-
-        //console.log('number'+ number + ' ' + decimal)
-        // for (var i = Math.floor(props.stars); i <= 0 ; i--) {
-        //     //this.setState({this.state.stars.push(1)})
-        // }
-        //this.setState(stars;)
+    if (.3 <= decimal && decimal <= .7 )  {
+        array[number] = .5;
     }
-    render() {
-        return (
-            <div>
-                {this.state.stars.map (stars=> (
-                    (stars === 1) 
-                    ? <span class="fa fa-star checked"></span> 
-                    : (stars === .5 
-                        ? <span class="fa fa-star-half-empty checked"></span>
-                        : <span class="fa fa-star-o checked"></span>
-                    )
-                ))}
-            </div>
-        )
+    if (.7 <= decimal && decimal <= .9 )  {
+        array[number] = 1;
     }
+    //console.log(array);
+
+    return (
+        <div>
+            {array.map (stars=> (
+                (stars === 1) 
+                ? <span className="fa fa-star checked"></span> 
+                : (stars === .5 
+                    ? <span className="fa fa-star-half-empty checked"></span>
+                    : <span className="fa fa-star-o checked"></span>
+                )
+            ))}
+            num {props.stars} num
+        </div>
+    )
 }
 
 export default Stars;
-
-//if(state = )
