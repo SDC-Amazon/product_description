@@ -15,6 +15,7 @@
 }
 #seller_ps:hover {
     text-decoration:underline;
+    cursor: pointer;
 }
 
 #list {
@@ -32,6 +33,7 @@
 
 #ad:hover {
     text-decoration:underline;
+    cursor: pointer;
 }
 
 #price {
@@ -50,6 +52,7 @@
 
 #ratings:hover {
     text-decoration:underline;
+    cursor: pointer;
 }
 
 .checked {
@@ -137,6 +140,7 @@
 }
 #incorrect_ps:hover {
     text-decoration:underline;
+    cursor: pointer;
 }
 
 #barn_raise {

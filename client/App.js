@@ -25,9 +25,11 @@ class App extends React.Component {
         this.state = {
             value: 'Hi',
             item: dummydata,
-            id: 4,
-            option_num: 0
+            id: 26,
+            option_num: 0,
+            option_text:''
         }
+        this.selectChange =this.selectChange.bind(this);
     }
 
     componentDidMount() {
@@ -35,8 +37,11 @@ class App extends React.Component {
         this.getItem()
     }
 
-    selectorChange(event) {
-
+    selectChange(event) {
+        //event.preventDefault();
+        console.log('Here boi')
+        console.log(event.target.value)
+        this.setState({option_text: event.target.value})
     }
 
     getItem() {
@@ -55,7 +60,11 @@ class App extends React.Component {
             <div>
                 <h1> Hello  AMIShON</h1>
                 <div>
-                <ProductDescription item={this.state.item}/>
+                <ProductDescription 
+                item={this.state.item} 
+                change={this.selectChange} 
+                option_text={this.state.option_text}
+                />
                 </div>
             </div>
         )

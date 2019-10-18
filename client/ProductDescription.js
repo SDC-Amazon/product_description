@@ -9,15 +9,15 @@ import Title from './Title.js';
 import Incorrect from './Incorrect.js'
 
 function ProductDescription(props) {
-    //console.log(props.item.stars)
+    //console.log(props.option_text)
     return (
         <div>
             <Title title={props.item.title}/>
             <Seller seller={props.item.seller}/>
             <Stars stars={props.item.stars} ratings={props.item.number_ratings} id="stars"/> 
-            <Price item={props.item}/>
+            <Price item={props.item} option_text={props.option_text}/>
             <Ad />
-            <Options options={props.item.options}/>     
+            <Options options={props.item.options} change={props.change}/>     
             <Description description={props.item.description}/>
             <Incorrect />
         </div>
