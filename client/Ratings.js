@@ -2,9 +2,12 @@ import React from 'react';
 
 function Ratings (props) {
     return (
-        <div id="ratings">
+        <React.Fragment >
+        <span id="ratings">
         {props.ratings} ratings
-        </div>
+        </span>
+        
+        </React.Fragment>
     )
 }    
 export default Ratings;

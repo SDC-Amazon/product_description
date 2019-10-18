@@ -5,7 +5,7 @@ function Price (props) {
         <div id="price">
         <span id="price-label">Price:</span> ${props.item.options[0].price} 
         { (props.item.prime === true) 
-            ? <span><img id ="logo" src="Amazon-Prime-Logo.jpg"/></span> 
+            ? <img id ="logo" src="Amazon-Prime-Logo.jpg"/>
             : <span id="notPrime"> <strong >Note:</strong> Not eligible for AMISHON Prime.</span>}
         </div>
     )

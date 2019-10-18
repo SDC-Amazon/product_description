@@ -6,7 +6,6 @@ import Ad from './Ad.js';
 import Price from './Price.js';
 import Seller from './Seller.js';
 import Title from './Title.js';
-import Ratings from './Ratings.js';
 import Incorrect from './Incorrect.js'
 
 function ProductDescription(props) {
@@ -15,8 +14,7 @@ function ProductDescription(props) {
         <div>
             <Title title={props.item.title}/>
             <Seller seller={props.item.seller}/>
-            <Ratings ratings={props.item.number_ratings}/>
-            <Stars stars={props.item.stars} id="stars"/> 
+            <Stars stars={props.item.stars} ratings={props.item.number_ratings} id="stars"/> 
             <Price item={props.item}/>
             <Ad />
             <Options options={props.item.options}/>     

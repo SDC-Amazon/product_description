@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Ratings from './Ratings.js';
 
 const Stars = (props) => {
 
@@ -27,7 +27,9 @@ const Stars = (props) => {
                     : <span key={i} className="fa fa-star-o checked" ></span>
                 )
             ))}
-            <span id="stars_pd_text">{props.stars} / out of 5 stars </span>
+            <img id ="down_arrow" src="down_arrow.jpg"/>
+            <span><Ratings ratings={props.ratings}/> </span>
+            {/* <span id="stars_pd_text">{props.stars} / out of 5 stars </span> */}
             <hr id="line_ps"/>
         </div>
     
