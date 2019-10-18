@@ -18,7 +18,7 @@ const Stars = (props) => {
     }
 
     return (
-        <div>
+        <div id="stars_ps">
             {array.map ((stars, i)=> (
                 (stars === 1) 
                 ? <span key={i} className="fa fa-star checked" ></span> 
@@ -27,8 +27,10 @@ const Stars = (props) => {
                     : <span key={i} className="fa fa-star-o checked" ></span>
                 )
             ))}
-            <span>{props.stars} / out of 5 stars </span>
+            <span id="stars_pd_text">{props.stars} / out of 5 stars </span>
+            <hr id="line_ps"/>
         </div>
+    
     )
 }
 

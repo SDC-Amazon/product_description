@@ -1,4 +1,4 @@
-#p01 {
+#title_ps {
     color:#111;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 21px;
@@ -7,14 +7,13 @@
     font-weight: 400;
 }
 
-#p02 {
+#seller_ps {
     color: #0066c0;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
-    margin-bottom: 0!important;
     line-height: 19px;
 }
-#p02:hover {
+#seller_ps:hover {
     text-decoration:underline;
 }
 
@@ -74,7 +73,19 @@
     font-size: 13px;
 }
 #stars {
-    margin-bottom: 10px!important;
+    margin-bottom: 0px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+#stars_ps {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 17px;
+}
+
+#stars_pd_text {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 12px;
+    padding-left:10px;
 }
 
 #logo {
@@ -87,4 +98,49 @@
     font-size: 13px;
     line-height: 19px;
     color: #111;
+}
+
+#line_ps {
+    margin-bottom: 14px;
+    height: 1px;
+    border-top:1px;
+    margin-bottom: 14px;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-width: 0;
+    border-top: 1px solid #e7e7e7;
+    line-height: 19px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+#incorrect_ps {
+    color: #0066c0;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+#speech_bubble {
+    width: 16px;
+    height: 12px;
+    padding-left:10px;
+    padding-right:5px;
+}
+#incorrect_ps:hover {
+    text-decoration:underline;
+}
+
+#barn_raise {
+    width: 360px;
+    height: 136px;
+    padding-left:20px;
 }

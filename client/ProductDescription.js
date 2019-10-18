@@ -1,59 +1,27 @@
 import React from 'react';
 import Stars from './Stars.js';
+import Description from './Description.js';
+import Options from './Options.js';
+import Ad from './Ad.js';
+import Price from './Price.js';
+import Seller from './Seller.js';
+import Title from './Title.js';
+import Ratings from './Ratings.js';
+import Incorrect from './Incorrect.js'
 
 function ProductDescription(props) {
     //console.log(props.item.stars)
     return (
         <div>
-            
-            <div id="p01">
-            {props.item.title}
-            </div>
-            
-            <div id="p02"> 
-            <span id="plain-text"> seller:</span> {props.item.seller}
-            </div>
-            
-            <div id="ratings">
-            {props.item.number_ratings} ratings
-            </div>
-            
-            <div id="stars">
-                <Stars stars={props.item.stars}/> 
-                <span> </span>
-            </div>
-
-            <div id="price">
-            <span id="price-label">Price:</span> ${props.item.options[0].price} 
-            { (props.item.prime === true) 
-                ? <span><img id ="logo" src="Amazon-Prime-Logo.jpg"/></span> 
-                : <span id="notPrime"> <strong >Note:</strong> Not eligible for Amazon Prime.</span>}
-            </div>
-
-            <div id="ad" >
-            Get $70 off instantly: Pay <span id="zero">$0.00</span> upon approval for the Amazon Prime Rewards Visa Card. No annual fee.
-            </div>
-
-            <div>
-                
-            </div>
-
-            <div>
-                <select>
-                    {props.item.options.map( (item) => (
-                        <option key={item.option}> {item.option} </option>
-                    ))}
-                </select>
-            </div>
-                    
-            <div id="list">
-            <ul>
-                {props.item.description.map((row)=> (
-                    <li key={row}>{row}</li>
-                ))}
-            </ul>
-            </div>
-
+            <Title title={props.item.title}/>
+            <Seller seller={props.item.seller}/>
+            <Ratings ratings={props.item.number_ratings}/>
+            <Stars stars={props.item.stars} id="stars"/> 
+            <Price item={props.item}/>
+            <Ad />
+            <Options options={props.item.options}/>     
+            <Description description={props.item.description}/>
+            <Incorrect />
         </div>
     )
 }
