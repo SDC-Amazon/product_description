@@ -25,7 +25,7 @@ class App extends React.Component {
         this.state = {
             value: 'Hi',
             item: dummydata,
-            id: 26,
+            id: 1,
             option_num: 0,
             option_text:''
         }
@@ -39,8 +39,8 @@ class App extends React.Component {
 
     selectChange(event) {
         //event.preventDefault();
-        console.log('Here boi')
-        console.log(event.target.value)
+        //console.log('Here boi')
+        //console.log(event.target.value)
         this.setState({option_text: event.target.value})
     }
 

@@ -7,12 +7,10 @@ function Price (props) {
     } else {
         for(var i=0;i<props.item.options.length;i++) {
             if(props.item.options[i].option === props.option_text) {
-                console.log('changed index')
-                index = 1;
+                index = i;
             }
         }
     }
-    console.log(props.item.options)
     return (
         <div id="price">
         <span id="price-label">Price:</span> ${props.item.options[index].price} 
