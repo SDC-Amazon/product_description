@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const db =  require('./db');
-const port = 3030;
+const port = 3004;
 
 const app = express();
 
