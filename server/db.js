@@ -1,28 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
-//faker stuff
-var faker = require('faker');
-var temp = faker.name.findName();
-console.log(temp);
+//import more_db from './more_db.js'
 
 mongoose.connect('mongodb://localhost/productDescription', {useNewUrlParser: true});
-
-// for(var i =0; i< 10; i++) {
-//     {
-//     id: i,
-//     title:  'X',
-//     seller: faker.company.companyName,
-//     stars: (Math.floor(Math.random() * 51) / 10),
-//     number_ratings: faker.random.number,
-//     prime: faker.random.boolean,
-//     options: [{
-//         option: faker.commerce.productAdjective,
-//         price: faker.commerce.price
-//     }],
-//     description: [faker.lorem.lines,faker.lorem.lines,faker.lorem.lines,faker.lorem.lines]
-//     }
-// }
 
 var prodDescSchema = new Schema({
     id: Number,
@@ -40,17 +20,19 @@ var prodDescSchema = new Schema({
 
 var Descriptions = mongoose.model("ProductDescriptions", prodDescSchema);
 
-    // Descriptions.insertMany(amishonArray, (err, res) => {
-    //     if (err) {
-    //         console.log(err)
-    //     } else {
-    //         console.log('successfully seeded!');
-    //     }
-    // });
+
     
-// const getAll = (callback) => {
-//     console.log()
-// }
+const getAll = (callback) => {
+    console.log()
+    Descriptions.insertMany(amishonArray, (err, res) => {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log('successfully seeded!');
+        }
+    });
+}
+
 
 const getItem = (id, callback)  => {
     Descriptions.find( {id: id}, (err, results) => {
@@ -67,3 +49,11 @@ const getItem = (id, callback)  => {
 module.exports = {
     getItem
 }
+
+// Descriptions.insertMany(amishonArray, (err, res) => {
+//     if (err) {
+//         console.log(err)
+//     } else {
+//         console.log('successfully seeded!');
+//     }
+// });

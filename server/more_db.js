@@ -9,13 +9,13 @@ var amishonArray = [
     prime: true,
     options: [{
         option: 'Small',
-        price: 19.99
+        price: 16.99
     },{
         option: 'Medium',
-        price: 19.99
+        price: 17.99
     },{
         option: 'Large',
-        price: 19.99
+        price: 18.99
     },{
         option: 'X-Large',
         price: 19.99
@@ -85,6 +85,510 @@ var amishonArray = [
             'One Size Fits Most Adult Men Up To Head Size 7 3/8']
     },
     {
+        id: 5,
+        title:  'Sultry Bib Apron',
+        seller: 'Amish Clothes Makers Association',
+        stars: 3.1,
+        number_ratings: 428,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 6,
+        title:  'They See Me Rollin They Hatin T-shirt',
+        seller: 'Amish Clothes Makers Association',
+        stars: 3.0,
+        number_ratings: 428,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 7,
+        title:  'Straight Stylin Straight Clip Suspender',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.9,
+        number_ratings: 428,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 8,
+        title:  'Little Amish Sun Hat',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.8,
+        number_ratings: 345,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 9,
+        title:  'Child\'s Amish Dress',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.7,
+        number_ratings: 62,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 10,
+        title:  'Forum Novelties Oversized Bonnet',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.6,
+        number_ratings: 36,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 11,
+        title:  'Felt Bonnet',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.5,
+        number_ratings: 26,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 12,
+        title:  'Awesome Amish Hat',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.4,
+        number_ratings: 27,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 13,
+        title:  'Amish Mafia White Tee',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.3,
+        number_ratings: 27,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 14,
+        title:  'Don\'t Drink Or Drive Tee',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.2,
+        number_ratings: 236,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 15,
+        title:  'Amish You Were Beer Tee',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.1,
+        number_ratings: 64,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 16,
+        title:  'Amish Country Tee',
+        seller: 'Amish Clothes Makers Association',
+        stars: 2.0,
+        number_ratings: 85,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+            'Breathable Fabric',
+            'Made from local sheep-wool',
+            'Great gift for the in-laws']
+    },
+    {
+        id: 17,
+        title:  'Striped Suspenders',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.9,
+        number_ratings: 84,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 18,
+        title:  'Amish Dress 2.0',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.8,
+        number_ratings: 387,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 19,
+        title:  'Amish Boy Clothes',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.7,
+        number_ratings: 246,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 20,
+        title:  'Amish Dress 3.0',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.6,
+        number_ratings: 27,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 21,
+        title:  'Amish Formal Tee',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.5,
+        number_ratings: 62,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 22,
+        title:  'Underwraps Amish',
+        seller:  'Amish Clothes Makers Association',
+        stars: 1.4,
+        number_ratings: 6,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 23,
+        title:  'The Plymouth Dress',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.3,
+        number_ratings: 24,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 24,
+        title:  'Amish Girl Clothes',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.2,
+        number_ratings: 25,
+        prime: false,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    },
+    {
+        id: 25,
+        title:  'Amish Women\'s Wear',
+        seller: 'Amish Clothes Makers Association',
+        stars: 1.0,
+        number_ratings: 26,
+        prime: true,
+        options: [{
+            option: 'Small',
+            price: 29.95
+        }, 
+        {
+            option: 'Medium',
+            price: 37.95
+        },
+        {
+            option: 'Large',
+            price: 43.95
+        }],
+        description: ['Great to wear out on the farm',
+        'Breathable Fabric',
+        'Made from local sheep-wool',
+        'Great gift for the in-laws']
+    }
+    {
         id: 26,
         title:  'Wet Botton Shoofly Pie',
         seller: 'Amish Tastes',
@@ -127,22 +631,431 @@ var amishonArray = [
         'Packed in a bakery-style white box of heavy cardboard for excellent crush protection during shipping']
     },
     {
-        id: 28,
-        title:  'Amish Wedding Foods - Apple Butter',
-        seller: 'Amish Wedding Foods',
-        stars: 4.5,
-        number_ratings: 17,
-        prime: true,
+    id: 28,
+    title:  'Amish Wedding Foods - Apple Butter',
+    seller: 'Amish Wedding Foods',
+    stars: 4.5,
+    number_ratings: 17,
+    prime: true,
+    options: [{
+        option: '1-pack',
+        price: 12.99
+    },{
+        option: '2-pack',
+        price: 18.99
+    }],
+    description: ['Old Fashioned Apple Butter',
+    'Made in Holmes County, Ohio',
+    'All Natural',
+    'Ingredients: Apples, Cider, Sugar, Cinnamon, and Citric Acid']
+    },
+    {
+        id: 29,
+        title:  'Amish Community Cookbook',
+        seller: 'Walnut Creek',
+        stars: 4.6,
+        number_ratings: 67,
+        prime: false,
         options: [{
+            option: 'one-size',
+            price: 43.23
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 30,
+        title:  'Minerva Dairy Amish Style Butter',
+        seller: 'Walnut Creek',
+        stars: 4.7,
+        number_ratings: 67,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 13.99
+        },{
+            option: '2-pack',
+            price: 19.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 31,
+        title:  'Amish Country Popcorn',
+        seller: 'Walnut Creek',
+        stars: 4.8,
+        number_ratings: 76,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
             option: '2-pack',
             price: 18.99
         }],
-        description: ['Old Fashioned Apple Butter',
-        'Made in Holmes County, Ohio',
-        'All Natural',
-        'Ingredients: Apples, Cider, Sugar, Cinnamon, and Citric Acid']
-        },
-
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 32,
+        title:  'Amish Wedding Foods - Seedless Rasberry',
+        seller: 'Walnut Creek',
+        stars: 4.9,
+        number_ratings: 53,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 33,
+        title:  'Amish Wedding Foods - Bread n Butter Pickle',
+        seller: 'Walnut Creek',
+        stars: 5.0,
+        number_ratings: 23,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 34,
+        title:  'Amish Wedding Foods - Pickled Beets',
+        seller: 'Walnut Creek',
+        stars: 4.9,
+        number_ratings: 245,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 35,
+        title:  'Walnut Creek Amish Hot Eggs',
+        seller: 'Walnut Creek',
+        stars: 4.8,
+        number_ratings: 234,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 36,
+        title:  'Amish Wedding Foods - Wide Noodles',
+        seller: 'Walnut Creek',
+        stars: 4.7,
+        number_ratings: 235,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 37,
+        title:  'Wanda Brunstetters Friends Christmas Cookbook',
+        seller: 'Amish Wedding',
+        stars: 4.6,
+        number_ratings: 62,
+        prime: false,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 38,
+        title:  'Amish Country Popcorn Butter',
+        seller: 'Amish Wedding',
+        stars: 4.5,
+        number_ratings: 6432,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 39,
+        title:  'Amish Wedding Foods - Pickled Hot Okra',
+        seller: 'Amish Wedding',
+        stars: 4.4,
+        number_ratings: 632,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 40,
+        title:  'Sweet Onion Relish Jars',
+        seller: 'Amish Wedding',
+        stars: 4.3,
+        number_ratings: 72,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 41,
+        title:  'Amish Wedding Foods - Jalapeno Eggs',
+        seller: 'Amish Wedding',
+        stars: 4.2,
+        number_ratings: 5,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 42,
+        title:  'Amish Wedding Foods - Parsley Noodles',
+        seller: 'Amish Wedding',
+        stars: 4.1,
+        number_ratings: 72,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 43,
+        title:  'Amish Wedding Foods - Old Fashioned Sauerkraut',
+        seller: 'Amish Wedding',
+        stars: 4.0,
+        number_ratings: 27,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 44,
+        title:  'Middle East Sweets',
+        seller: 'AMISH BASKETS AND BEYOND',
+        stars: 3.9,
+        number_ratings: 645,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 45,
+        title:  'Minerva Dairy Butter Roll',
+        seller: 'AMISH BASKETS AND BEYOND',
+        stars: 3.8,
+        number_ratings: 756,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 46,
+        title:  'Amish Wedding Foods - Zesty Bread',
+        seller: 'AMISH BASKETS AND BEYOND',
+        stars: 3.7,
+        number_ratings: 234,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 47,
+        title:  'Amish Made Traffic Jam',
+        seller: 'AMISH BASKETS AND BEYOND',
+        stars: 3.6,
+        number_ratings: 25,
+        prime: true,
+        options: [{
+            option: '1-pack',
+            price: 12.99
+        },{
+            option: '2-pack',
+            price: 18.99
+        }],
+        description: ['Fantastic Food',
+        'Great to share with pesky relatives',
+        'Pairs well with a barn-raising',
+        'Delicious to share with your 18 children']
+    },
+    {
+        id: 48,
+        title:  'Medium Amish Wedding Salsa',
+        seller: 'Amish Foodie',
+        stars: 4.9,
+        number_ratings: 23,
+        prime: true,
+        options: [{
+            option: 'Tri-pack',
+            price: 24.42
+        }],
+        description: ['Delicious']
+    },
+    {
+        id: 49,
+        title:  'Amish Wedding Foods - Pickled Asparagus',
+        seller: 'Amish Foodie',
+        stars: 4.2,
+        number_ratings: 67,
+        prime: true,
+        options: [{
+            option: '2-pack',
+            price: 8.99
+        }],
+        description: ['Yummy']
+    },
+    {
+        id: 50,
+        title:  'Amish Country Butter Salt',
+        seller: 'Amish Country Popcorn',
+        stars: 5.6,
+        number_ratings: 212,
+        prime: true,
+        options: [{
+            option: 'Pack of 1',
+            price: 2.43
+        },{
+            option: '3 Pack of Cheddar',
+            price: 23.33
+        },{
+            option: 'Medium White Tri-Packs',
+            price: 10.23
+        }],
+        description: ['You will receive one (six ounce) container of the favorite BallPark Style ButterSalt',
+        'Your purchase also includes a fantastic recipe guide: The "15 Amazing Popcorn Recipes" eBook',
+        'Non GMO, gluten free, tree nut and peanut free',
+        'A deliciously satisfying, low calorie and healthy snack',
+        'Grown, manufactured and packaged in the heart of the USA']
+    },
 {
     id: 100,
     title:  'Porchgate Amish Made The Original Adult Tree Swing (Tangy Orange)',
@@ -326,8 +1239,8 @@ var amishonArray = [
     id: 91,
     title:  'Peaceful Classics Wooden Furniture 3-in-1 Childrens High Chair, Wooden Rocking Horse, Writing Desk Solid Oak Wood (Harvest)',
     seller: 'Peaceful Classics',
-    stars: 234,
-    number_ratings: 4.8,
+    stars: 4.8,
+    number_ratings: 48,
     prime: true,
     options: [{
         option: 'Provvincial',
@@ -679,8 +1592,8 @@ var amishonArray = [
     title:  'Their Son\'s Amish Baby',
     seller: 'Samantha Price',
     stars: 3.5,
-    number_ratings: Number,
-    prime: Boolean,
+    number_ratings: 234,
+    prime: false,
     options: [{
         option: 'Kindle',
         price: 1.49
@@ -1132,55 +2045,9 @@ var amishonArray = [
         price: 24.24
     }],
     description: ['Though life had been challenging for Eve Wengerd since her husband\'s tragic death, she tried to brave her new circumstances by opening her own business and becoming an independent Amish woman. After all, he\'d left her to raise their daughter alone.']
-},
-{
-    id: 50,
-    title:  'Amish Country Butter Salt',
-    seller: 'Amish Country Popcorn',
-    stars: 5.6,
-    number_ratings: 212,
-    prime: true,
-    options: [{
-        option: 'Pack of 1',
-        price: 2.43
-    },{
-        option: '3 Pack of Cheddar',
-        price: 23.33
-    },{
-        option: 'Medium White Tri-Packs',
-        price: 10.23
-    }],
-    description: ['You will receive one (six ounce) container of the favorite BallPark Style ButterSalt',
-    'Your purchase also includes a fantastic recipe guide: The "15 Amazing Popcorn Recipes" eBook',
-    'Non GMO, gluten free, tree nut and peanut free',
-    'A deliciously satisfying, low calorie and healthy snack',
-    'Grown, manufactured and packaged in the heart of the USA']
-},
-{
-    id: 49,
-    title:  'Amish Wedding Foods - Pickled Asparagus',
-    seller: 'Amish Foodie',
-    stars: 4.2,
-    number_ratings: 67,
-    prime: true,
-    options: [{
-        option: '2-pack',
-        price: 8.99
-    }],
-    description: ['Yummy']
-},
-{
-    id: 48,
-    title:  'Medium Amish Wedding Salsa',
-    seller: 'Amish Foodie',
-    stars: 4.9,
-    number_ratings: 23,
-    prime: true,
-    options: [{
-        option: 'Tri-pack',
-        price: 24.42
-    }],
-    description: ['Delicious']
 }
 
+
 ];
+
+export default amishonArray;

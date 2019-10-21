@@ -156,3 +156,28 @@
     width: 10;
     height: 7px;
 }
+
+.option_selector {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    display: block;
+    font-size: 13px;
+    line-height:29px;
+    padding: 0 10px 0 11px;
+    color: #444;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    font-weight: 700;
+    border-radius: .5em;
+    background-color: #fff;
+    padding-right: 26px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 10;
+}
+
+.option_selector:hover {
+    border-color: #111;
+    color: #222; 
+    outline: none;
+}
