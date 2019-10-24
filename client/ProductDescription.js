@@ -11,7 +11,7 @@ import Incorrect from './Incorrect.js'
 function ProductDescription(props) {
     //console.log(props.option_text)
     return (
-        <div className="joel">
+        <div className="prodDescBody">
             <Title title={props.item.title}/>
             <Seller seller={props.item.seller}/>
             <Stars stars={props.item.stars} ratings={props.item.number_ratings} id="stars"/> 
