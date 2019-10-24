@@ -4,7 +4,9 @@ var Schema = mongoose.Schema;
 var new_db = require('./new_db');
 var more_db = require('./more_db')
 
-mongoose.connect('mongodb://localhost/DescriptionDatabase', {useNewUrlParser: true});
+//mongoose.connect('mongodb://localhost/DescriptionDatabase', {useNewUrlParser: true});
+//mongoose.connect('mongodb://localhost/DescriptionDatabase', {useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost/DescriptionDatabase', {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
 var prodDescSchema = new Schema({
     id: Number,
