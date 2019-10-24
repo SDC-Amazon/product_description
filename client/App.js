@@ -43,9 +43,6 @@ class App extends React.Component {
     }
 
     selectChange(event) {
-        //event.preventDefault();
-        //console.log('Here boi')
-        //console.log(event.target.value)
         this.setState({option_text: event.target.value})
     }
 
@@ -53,7 +50,6 @@ class App extends React.Component {
     getItem() {
         axios.get('/cats', {params: {id: this.state.id}} )
         .then((response)=> {
-            //console.log(response.data[0]);
             this.setState({item:response.data[0]})
         })
         .catch(((error)=> {

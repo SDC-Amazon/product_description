@@ -1,8 +1,7 @@
 import React from 'react';
 import Ratings from './Ratings.js';
 
-const Stars = (props) => {
-    console.log(props.stars)                //4.6
+const Stars = (props) => {               //4.6
     var number = Math.floor(props.stars)    //4
     var decimal = props.stars - number;     //.6
     var array = [0,0,0,0,0]

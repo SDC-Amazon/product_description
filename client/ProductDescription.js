@@ -9,7 +9,6 @@ import Title from './Title.js';
 import Incorrect from './Incorrect.js'
 
 function ProductDescription(props) {
-    //console.log(props.option_text)
     return (
         <div className="prodDescBody">
             <Title title={props.item.title}/>
