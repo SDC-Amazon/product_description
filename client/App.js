@@ -49,6 +49,7 @@ class App extends React.Component {
         this.setState({option_text: event.target.value})
     }
 
+    
     getItem() {
         axios.get('/cats', {params: {id: this.state.id}} )
         .then((response)=> {
