@@ -2,9 +2,9 @@ import React from 'react';
 import Ratings from './Ratings.js';
 
 const Stars = (props) => {
-
-    var number = Math.floor(props.stars)
-    var decimal = props.stars - number;
+    console.log(props.stars)                //4.6
+    var number = Math.floor(props.stars)    //4
+    var decimal = props.stars - number;     //.6
     var array = [0,0,0,0,0]
 
     for (var i = 0; i < number; i++) {

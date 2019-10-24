@@ -111,14 +111,12 @@
     margin-bottom:3px;
     height: 1px;
     unicode-bidi: isolate;
-
     margin-inline-start: auto;
     margin-inline-end: auto;
     overflow: hidden;
     border-style: inset;
     background-color: transparent;
     display: block;
-    height: 1px;
     border-width: 0;
     border-top: 1px solid #e7e7e7;
     line-height:10px;
@@ -144,8 +142,8 @@
 }
 
 #barn_raise {
-    width: 360px;
-    height: 136px;
+    width: 320px;
+    height: 203px;
     padding-left:20px;
     padding-top:10px;
 }
@@ -180,4 +178,146 @@
     border-color: #111;
     color: #222; 
     outline: none;
+}
+
+#logo_stuff {
+    width: 80px;
+    height: 18px;
+    position: relative;
+    vertical-align: text-top;
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon@spritePackerImages-sprite_1x-003a05344e6a5263c945684c66748394b4cbb9a2._V2_.png);
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: -175px -368px;
+}
+
+.button {
+    display: grid;
+    grid-template-rows: 50px 100px
+    grid-template-columns: 90px 50px 120px
+}
+
+.back_to_top {
+    background-color: #37475A;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    line-height: 19px;
+    font-size: 13px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    white-space: normal;
+    color: #FFF;
+    cursor: pointer;
+    margin-left:0px;
+}
+
+
+
+html body{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+}
+
+.joel {
+    margin: 8px;
+}
+
+#header_0 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#joel_sucks {
+    padding-top: 40px;
+    color: #DDD;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #232F3E;
+    justify-items: center;
+    display: flex;
+    justify-items: center; 
+}
+
+#row0 {
+    width
+    fixed-width: 136px; 
+}
+#row1 {
+    width: 175px;
+} 
+#row2 {
+    width: 222px;
+} 
+#row3 {
+    width: 165px;
+}
+
+.header {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footer_logo {
+    
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
+    background-position-x: -10px;
+    background-position-y: -90px;
+    width: 76px;
+    height: 23px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+}
+
+.footer_base {
+    padding-top: 10px;
+    margin-right: auto;
+    padding-bottom: 10px;
+    margin-left: auto;
+    display: flex;
+    justify-items: center; 
+}
+
+.footer_all {
+    background-color: #232F3E;
+}
+
+.footer_line {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(58, 69, 83);;
+    margin-top: 40px;
+}
+
+.header:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#header_0 {
+    text-decoration: none;
+}
+
+.report_bubble {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAYCAYAAABeIWWlAAABvklEQVRYw+2Xz0oCURTGD7hw4xvoA7j0DVwLbiehwOUoxUBvILho1Srat1IhamUP4J8Ua5GBCNEu/wxETS3cNDR4O+c2o+bILOzegeJ+cLffOT+/43AOAMnoJaDQqILenILeYGIeepEnea+ptweJzg5U8U2vNWAiHnmRJ3kvK1FxvWmJg/JBWquAHEwDSxSUDxK9l4B6o0ZNZE4GbPxuM1EavX1wTw5ICbrCX7dGTQyPMsy2xsLq2a8j7umm6NbTmyY1IBLME3m66ZkeHBY3qQGRYAtA9HQTNL3keAOytBjPJRxvQJY8fwWn4BScglNwCk7B/W24/7x+8VPne3GmZTeExbm6WJxx2ZW7OG9x8kQPWqxy87x5/CScPN3dKHtpVzaOX/DJ84tjtXz1FACHoyj4WB1flIPgTP+xuo0KLQMBHILInz0w25n7Phwi1cmBgc07BPF4mmfzT3vtwyFaxXYWk5kRUPr4XiocqZuDLMLMCGhQSkuGI+13Ugg4+TGOEoX/pxS+yeo4glQVu3GE6ocBxxPUII6A/XDgeILDGCZYDwOONNQghoD1cOBI5yySLN1eQkhiGkTuDpOB9b4AhZmO2SqlXEkAAAAASUVORK5CYII=);
+    display: inline-block;
+    position: relative;
+    width: 13px;
+    top: 1px;
+    height: 11px;
+    background-position: 0 0;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 200% 100%;
 }
