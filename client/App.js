@@ -25,16 +25,21 @@ class App extends React.Component {
         this.state = {
             value: 'Hi',
             item: dummydata,
-            id: 12,
+            id: 14,
             option_num: 0,
             option_text:''
         }
-        this.selectChange =this.selectChange.bind(this);
+        this.selectChange = this.selectChange.bind(this);
     }
 
     componentDidMount() {
         document.productID = 1
         this.getItem()
+        window.addEventListener('updateProduct', (event) => {
+            this.setState({
+                id: event.detail,
+            })
+        }, false)
     }
 
     selectChange(event) {
@@ -57,8 +62,7 @@ class App extends React.Component {
 
     render() {
         return ( 
-            <div>
-                <h1> Hello  AMIShON</h1>
+            <div className='app_stuff'>
                 <div>
                 <ProductDescription 
                 item={this.state.item} 

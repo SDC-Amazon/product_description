@@ -1,8 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 //import more_db from './more_db.js'
+var new_db = require('./new_db');
+var more_db = require('./more_db')
 
-mongoose.connect('mongodb://localhost/productDescription', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/DescriptionDatabase', {useNewUrlParser: true});
 
 var prodDescSchema = new Schema({
     id: Number,
@@ -18,21 +20,18 @@ var prodDescSchema = new Schema({
     description: [String]
 });
 
-var Descriptions = mongoose.model("ProductDescriptions", prodDescSchema);
+var Descriptions = mongoose.model("DescriptionCollection", prodDescSchema);
 
-
-    
-const getAll = (callback) => {
-    console.log()
-    Descriptions.insertMany(amishonArray, (err, res) => {
-        if (err) {
-            console.log(err)
-        } else {
-            console.log('successfully seeded!');
-        }
-    });
-}
-
+// const getAll = (callback) => {
+//     console.log()
+//     Descriptions.insertMany(amishonArray, (err, res) => {
+//         if (err) {
+//             console.log(err)
+//         } else {
+//             console.log('successfully seeded!');
+//         }
+//     });
+// }
 
 const getItem = (id, callback)  => {
     Descriptions.find( {id: id}, (err, results) => {
@@ -42,15 +41,28 @@ const getItem = (id, callback)  => {
             //console.log(results);
             callback(null, results)
         }
-    
     })
 }
+// const getPrices = ()  => {
+//     Descriptions.find({})
+//         .then((res) => {
+//             let results = [];
+//             // console.log(res[1])
+//             for (var i = 0; i < res.length; i++) {
+//                 // console.log(res[i])
+//                 results.push(res[i].options[0].price);
+//             }
+//             console.log(results)
+//         })
+// }
+// getPrices()
+
 
 module.exports = {
     getItem
 }
 
-// Descriptions.insertMany(amishonArray, (err, res) => {
+// Descriptions.insertMany(new_db.database_array, (err, res) => {
 //     if (err) {
 //         console.log(err)
 //     } else {

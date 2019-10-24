@@ -2,9 +2,9 @@ import React from 'react';
 import Ratings from './Ratings.js';
 
 const Stars = (props) => {
-
-    var number = Math.floor(props.stars)
-    var decimal = props.stars - number;
+    console.log(props.stars)                //4.6
+    var number = Math.floor(props.stars)    //4
+    var decimal = props.stars - number;     //.6
     var array = [0,0,0,0,0]
 
     for (var i = 0; i < number; i++) {
@@ -27,7 +27,7 @@ const Stars = (props) => {
                     : <span key={i} className="fa fa-star-o checked" ></span>
                 )
             ))}
-            <img id ="down_arrow" src="down_arrow.jpg"/>
+            <img id ="down_arrow" src="https://farmingshon.s3.us-east-2.amazonaws.com/down_arrow.jpg"/>
             <span><Ratings ratings={props.ratings}/> </span>
             {/* <span id="stars_pd_text">{props.stars} / out of 5 stars </span> */}
             <hr id="line_ps"/>

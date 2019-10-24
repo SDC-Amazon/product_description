@@ -8,6 +8,11 @@ function Options(props) {
                     <option key={item.option}> {item.option} </option>
                 ))}
             </select>
+
+            {/* {props.options.map( (item) => (
+                    <button className="button" key={item.option}> {item.option} ${item.price} </button>
+                ))} */}
+            
         </div>
     )
 }
