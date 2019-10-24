@@ -12,12 +12,12 @@ function Price (props) {
         }
     }
     return (
-        <tbody id="price">
-        <tr id="price-label">Price:</tr> ${props.item.options[index].price.toFixed(2)} 
+        <div id="price">
+        <span id="price-label">Price:</span> ${props.item.options[index].price.toFixed(2)} 
         { (props.item.prime === true) 
             ? <img id ="logo" src="https://farmingshon.s3.us-east-2.amazonaws.com/Amazon-Prime-Logo.jpg"/>
-            : <td id="notPrime"> <strong >Note:</strong> Not eligible for AMISHON Prime.</td>}
-        </tbody>
+            : <span id="notPrime"> <strong >Note:</strong> Not eligible for AMISHON Prime.</span>}
+        </div>
     )
 }    
 export default Price;

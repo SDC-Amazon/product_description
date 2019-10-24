@@ -8,7 +8,7 @@ function Incorrect (props) {
             Report incorrect product information.
             <hr id="line_ps"/>
         <div>
-            <img id ="barn_raise" src="antFarm.jpg"/>
+            <img id ="barn_raise" src="https://farmingshon.s3.us-east-2.amazonaws.com/antFarm.jpg"/>
         </div>
         </div>
     )

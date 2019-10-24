@@ -25,7 +25,7 @@ class App extends React.Component {
         this.state = {
             value: 'Hi',
             item: dummydata,
-            id: 13,
+            id: 14,
             option_num: 0,
             option_text:''
         }
