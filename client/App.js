@@ -13,6 +13,10 @@ const dummydata = {
     options: [{
         option: '2-pack',
         price: 18.99
+    },
+    {
+        option: '4-pack',
+        price: 20.99
     }],
     description: ['Old Fashioned Apple Butter',
     'Made in Holmes County, Ohio',
