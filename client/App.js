@@ -38,12 +38,13 @@ class App extends React.Component {
 
     componentDidMount() {
         //document.productID = 1
-        this.getItem()
+        
         window.addEventListener('updateProduct', (event) => {
             this.setState({
                 id: event.detail,
             })
         }, false)
+        this.getItem()
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -58,7 +59,7 @@ class App extends React.Component {
 
     
     getItem() {
-        axios.get('/prodDesc', {params: {id: this.state.id}} )
+        axios.get('http://ec2-18-216-249-173.us-east-2.compute.amazonaws.com/prodDesc', {params: {id: this.state.id}} )
         .then((response)=> {
             this.setState({item:response.data[0]})
         })
