@@ -29,7 +29,7 @@ class App extends React.Component {
         this.state = {
             value: 'Hi',
             item: dummydata,
-            id: 14,
+            id: 1,
             option_num: 0,
             option_text:''
         }

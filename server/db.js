@@ -4,9 +4,16 @@ var Schema = mongoose.Schema;
 var new_db = require('./new_db');
 var more_db = require('./more_db')
 
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+    console.log('db connected!');
+});
 //mongoose.connect('mongodb://localhost/DescriptionDatabase', {useNewUrlParser: true});
 //mongoose.connect('mongodb://localhost/DescriptionDatabase', {useUnifiedTopology: true});
-mongoose.connect('mongodb://localhost/DescriptionDatabase', {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+//mongoose.connect('mongodb://localhost/DescriptionDatabase', {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+const uri= 'mongodb+srv://Rob:q25MKt@A^d4f@cluster0-6qxdh.mongodb.net/test?retryWrites=true&w=majority';
+mongoose.connect(uri, {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
 var prodDescSchema = new Schema({
     id: Number,
@@ -58,7 +65,6 @@ const getItem = (id, callback)  => {
 //         })
 // }
 // getPrices()
-
 
 module.exports = {
     getItem

@@ -194,8 +194,8 @@
 
 .button {
     display: grid;
-    grid-template-rows: 50px 100px
-    grid-template-columns: 90px 50px 120px
+    grid-template-rows: 50px 100px;
+    grid-template-columns: 90px 50px 120px;
 }
 
 .back_to_top {
@@ -214,8 +214,6 @@
     cursor: pointer;
     margin-left:0px;
 }
-
-
 
 html body{
     left: 0;

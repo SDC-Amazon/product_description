@@ -14,8 +14,8 @@ function Footer (props) {
                 Back to top
             </span>
             <div id='footer_bar'>
-                {clickables.map((currentValue, index, array)=> (
-                    <ul key={index} id={`row${index}`} className={'row'}> {array[index].map((value, i )=> (
+                {clickables.map((currentValue, index)=> (
+                    <ul key={index} id={`row${index}`} className={'row'}> {currentValue.map((value, i )=> (
                         <li key={value} id={`header_${i}`} className={'header'}> {value}</li> 
                     ))}
                     </ul>
