@@ -27,23 +27,29 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 'Hi',
+            //value: 'Hi',
             item: dummydata,
             id: 1,
-            option_num: 0,
+            //option_num: 0,
             option_text:''
         }
         this.selectChange = this.selectChange.bind(this);
     }
 
     componentDidMount() {
-        document.productID = 1
+        //document.productID = 1
         this.getItem()
         window.addEventListener('updateProduct', (event) => {
             this.setState({
                 id: event.detail,
             })
         }, false)
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.id !== prevState.id) {
+            this.getItem();
+        }
     }
 
     selectChange(event) {
