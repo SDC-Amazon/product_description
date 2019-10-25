@@ -58,7 +58,7 @@ class App extends React.Component {
 
     
     getItem() {
-        axios.get('/cats', {params: {id: this.state.id}} )
+        axios.get('/prodDesc', {params: {id: this.state.id}} )
         .then((response)=> {
             this.setState({item:response.data[0]})
         })
