@@ -300,7 +300,7 @@ html body{
 
 .header_all {
     background-color: #232F3E;
-    color: #ccc;
+    color: #ccc!important;
     line-height: 1em;
     height: 54px;
     padding-top: 1px;
@@ -308,7 +308,7 @@ html body{
 }
 
 .header_bar {
-    color: #ccc;
+    color: #ccc!important;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 12px;
 
@@ -371,7 +371,7 @@ html body{
 }
 
 .header_left {
-    color: #ccc;
+    color: #ccc!important;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 12px;
 
