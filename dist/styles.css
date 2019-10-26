@@ -303,7 +303,7 @@ html body{
     background-color: #232F3E;
     color: #ccc!important;
     line-height: 1em;
-    height: 54px;
+    height: 40px;
     padding-top: 1px;
     width: 100%;
 }
@@ -320,7 +320,7 @@ html body{
     justify-content: center;
     vertical-align: baseline;
     justify-items: center; 
-    margin-top: 21px;
+    margin-top: 10px;
     display: flex;
     
 
@@ -400,10 +400,10 @@ html body{
     width: 120px;
     height: 32px;
     margin-left: 10px;
-    margin-top:15px;
+    margin-top:4px;
 }
 .deliver_image:hover {
-    margin-top: 14px;
+    margin-top: 3px;
     margin-right: 9px;
     margin-bottom: 0px;
     margin-left: 9px;
