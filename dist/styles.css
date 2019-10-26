@@ -307,23 +307,23 @@ html body{
     height: 40px;
     padding-top: 1px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .header_bar {
     color: #ccc!important;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 12px;
-
-    /* background-color: #232F3E; */
     justify-items: center;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: center;
+    /* justify-content: center; */
     vertical-align: baseline;
     justify-items: center; 
     margin-top: 10px;
     display: flex;
-    
+    padding-left:200px;
 
     border-top-color: rgba(255, 255, 255, 0.2)!important;
     border-right-color: rgba(255, 255, 255, 0.2)!important;

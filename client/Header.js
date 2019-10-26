@@ -5,7 +5,6 @@ function Header (props) {
 
     return (
         <div className="header_all">
-            
             <div className="header_left">
                 <div className="deliver_image"></div>
                 {/* <span className="location"> </span>
