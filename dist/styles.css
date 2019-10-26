@@ -316,11 +316,12 @@ html body{
     justify-items: center;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-around;
-    display: flex;
-    justify-items: center; 
+    justify-content: center;
     vertical-align: baseline;
+    justify-items: center; 
     margin-top: 21px;
+    display: flex;
+    
 
     border-top-color: rgba(255, 255, 255, 0.2);
     border-right-color: rgba(255, 255, 255, 0.2);
@@ -334,16 +335,76 @@ html body{
     padding-left: 6px;
 
     margin-top: 1px;
-    margin-right: 2px;
+    margin-right: 10px;
     margin-bottom: 1px;
-    margin-left: 1px;
+    margin-left: 9px;
 }
 
 .headerItem:hover {
     margin-top: 0px;
-    margin-right: 1px;
+    margin-right: 9px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 8px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: red;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-left-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.header_left {
+    color: #ccc;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+    vertical-align: baseline;
+    justify-items: center;
+    position: absolute;
+}
+
+.deliver_to{
+    float: left;
+    clear: both;
+}
+
+.hack_reactor {
+    float: left;
+    clear: both;
+} 
+
+.deliver_image {
+    background-image: url(https://farmingshon.s3.us-east-2.amazonaws.com/deliver.png)!important;
+    background-size: 120px 32px;
+    width: 120px;
+    height: 32px;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.deliver_image:hover {
+    margin-top: 14px;
+    margin-right: 9px;
+    margin-bottom: 0px;
+    margin-left: 9px;
     border-radius: 2px;
     border-width: 1px;
     border-color: red;
