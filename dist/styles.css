@@ -95,10 +95,11 @@
 }
 
 #logo {
-    width: 77px;
-    height: 32px;
+    width: 66px;
+    height: 20px;
     vertical-align: sub;
-    padding-bottom:0px;
+    padding-bottom:3px;
+    padding-left: 5px;
 }
 
 #notPrime {
@@ -400,10 +401,10 @@ html body{
     width: 120px;
     height: 32px;
     margin-left: 10px;
-    margin-top:4px;
+    margin-top:1px;
 }
 .deliver_image:hover {
-    margin-top: 3px;
+    margin-top: 0px;
     margin-right: 9px;
     margin-bottom: 0px;
     margin-left: 9px;
