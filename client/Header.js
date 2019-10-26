@@ -14,7 +14,7 @@ function Header (props) {
             </div>
             <div className="header_bar">
                 {headerArray.map((words, index) => (
-                        <a key={index} className={'headerItem'}> {words} </a>
+                        <p key={index} className={'headerItem'}> {words} </p>
                     ))}
             </div>
         </div>
