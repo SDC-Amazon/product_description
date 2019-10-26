@@ -245,40 +245,14 @@ html body{
     justify-items: center; 
 }
 
-#row0 {
-    width
-    fixed-width: 136px; 
-}
-#row1 {
-    width: 175px;
-} 
-#row2 {
-    width: 222px;
-} 
-#row3 {
-    width: 165px;
-}
-
 .header {
     padding-inline-start: 0px;
     list-style-type: none;
     margin-bottom: 10px;
 }
 
-/* .footer_logo {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
-    background-position-x: -10px;
-    background-position-y: -90px;
-    width: 76px;
-    height: 23px;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-bottom: 15px;
-    margin-left: auto;
-} */
-
 .footer_logo {
-    background-image: url(https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon.png);
+    background-image: url(https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon_best.png);
     margin-left: auto;
     margin-right: auto;
 }
@@ -319,8 +293,78 @@ html body{
     width: 13px;
     top: 1px;
     height: 11px;
-    background-position: 0 0;
     background-position-x: 0px;
     background-position-y: 0px;
     background-size: 200% 100%;
+}
+
+.header_all {
+    background-color: #232F3E;
+    color: #ccc;
+    line-height: 1em;
+    height: 54px;
+    padding-top: 1px;
+    width: 100%;
+}
+
+.header_bar {
+    color: #ccc;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 12px;
+
+    /* background-color: #232F3E; */
+    justify-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    display: flex;
+    justify-items: center; 
+    vertical-align: baseline;
+    margin-top: 21px;
+
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-left-color: rgba(255, 255, 255, 0.2);
+}
+.headerItem {
+    padding-top: 5px;
+    padding-right: 6px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+}
+
+.headerItem:hover {
+    margin-top: 0px;
+    margin-right: 1px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: red;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-left-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
 }

@@ -23,7 +23,7 @@ function Footer (props) {
             </div>
             <div className="footer_line"></div>
             <div className="footer_base">
-                <img className="footer_logo" src="https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon.png"></img>
+                <img className="footer_logo" src="https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon_best.png"></img>
                 
             </div>
         </div>
