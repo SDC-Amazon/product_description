@@ -15,8 +15,8 @@ function Price (props) {
         <div id="price">
         <span id="price-label">Price:</span> ${props.item.options[index].price.toFixed(2)} 
         { (props.item.prime === true) 
-            ? <img id ="logo" src="https://farmingshon.s3.us-east-2.amazonaws.com/Amazon-Prime-Logo.jpg"/>
-            : <span id="notPrime"> <strong >Note:</strong> Not eligible for AMISHON Prime.</span>}
+            ? <img id ="logo" src="https://farmingshon.s3.us-east-2.amazonaws.com/Amazon-Prime-Logo.png"/>
+            : <span id="notPrime"> <strong >Note:</strong> Not eligible for Farmazon Prime.</span>}
         </div>
     )
 }    

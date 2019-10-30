@@ -13,6 +13,10 @@ const dummydata = {
     options: [{
         option: '2-pack',
         price: 18.99
+    },
+    {
+        option: '4-pack',
+        price: 20.99
     }],
     description: ['Old Fashioned Apple Butter',
     'Made in Holmes County, Ohio',
@@ -23,37 +27,40 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 'Hi',
+            //value: 'Hi',
             item: dummydata,
-            id: 14,
-            option_num: 0,
+            id: 1,
+            //option_num: 0,
             option_text:''
         }
         this.selectChange = this.selectChange.bind(this);
     }
 
     componentDidMount() {
-        document.productID = 1
-        this.getItem()
+        //document.productID = 1
+        
         window.addEventListener('updateProduct', (event) => {
             this.setState({
                 id: event.detail,
             })
         }, false)
+        this.getItem()
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.id !== prevState.id) {
+            this.getItem();
+        }
     }
 
     selectChange(event) {
-        //event.preventDefault();
-        //console.log('Here boi')
-        //console.log(event.target.value)
         this.setState({option_text: event.target.value})
     }
 
     
     getItem() {
-        axios.get('/cats', {params: {id: this.state.id}} )
+        axios.get('http://ec2-18-216-249-173.us-east-2.compute.amazonaws.com/prodDesc', {params: {id: this.state.id}} )
         .then((response)=> {
-            //console.log(response.data[0]);
             this.setState({item:response.data[0]})
         })
         .catch(((error)=> {

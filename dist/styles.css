@@ -23,6 +23,7 @@
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
     line-height: 19px;
+    margin-top: 10px;
 }
 
 #ad {
@@ -95,10 +96,11 @@
 }
 
 #logo {
-    width: 77px;
-    height: 32px;
+    width: 66px;
+    height: 20px;
     vertical-align: sub;
-    padding-bottom:0px;
+    padding-bottom:3px;
+    padding-left: 5px;
 }
 
 #notPrime {
@@ -142,8 +144,8 @@
 }
 
 #barn_raise {
-    width: 320px;
-    height: 203px;
+    width: 266px;
+    height: 170px;
     padding-left:20px;
     padding-top:10px;
 }
@@ -194,8 +196,8 @@
 
 .button {
     display: grid;
-    grid-template-rows: 50px 100px
-    grid-template-columns: 90px 50px 120px
+    grid-template-rows: 50px 100px;
+    grid-template-columns: 90px 50px 120px;
 }
 
 .back_to_top {
@@ -214,8 +216,6 @@
     cursor: pointer;
     margin-left:0px;
 }
-
-
 
 html body{
     left: 0;
@@ -247,40 +247,14 @@ html body{
     justify-items: center; 
 }
 
-#row0 {
-    width
-    fixed-width: 136px; 
-}
-#row1 {
-    width: 175px;
-} 
-#row2 {
-    width: 222px;
-} 
-#row3 {
-    width: 165px;
-}
-
 .header {
     padding-inline-start: 0px;
     list-style-type: none;
     margin-bottom: 10px;
 }
 
-/* .footer_logo {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
-    background-position-x: -10px;
-    background-position-y: -90px;
-    width: 76px;
-    height: 23px;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-bottom: 15px;
-    margin-left: auto;
-} */
-
 .footer_logo {
-    background-image: url(https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon.png);
+    background-image: url(https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon_best.png);
     margin-left: auto;
     margin-right: auto;
 }
@@ -321,8 +295,141 @@ html body{
     width: 13px;
     top: 1px;
     height: 11px;
-    background-position: 0 0;
     background-position-x: 0px;
     background-position-y: 0px;
     background-size: 200% 100%;
+    margin-right: 5px;
+}
+
+.header_all {
+    background-color: #232F3E;
+    color: #ccc!important;
+    line-height: 1em;
+    height: 40px;
+    padding-top: 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_bar {
+    color: #ccc!important;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 12px;
+    justify-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    /* justify-content: center; */
+    vertical-align: baseline;
+    justify-items: center; 
+    margin-top: 10px;
+    display: flex;
+    padding-left: 200px;
+
+    border-top-color: rgba(255, 255, 255, 0.2)!important;
+    border-right-color: rgba(255, 255, 255, 0.2)!important;
+    border-bottom-color: rgba(255, 255, 255, 0.2)!important;
+    border-left-color: rgba(255, 255, 255, 0.2)!important;
+}
+.headerItem {
+    color: #ccc!important;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    margin-left: 9px;
+}
+
+.headerItem:hover {
+    margin-top: 0px;
+    margin-right: 9px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: red;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-left-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.header_left {
+    color: #ccc!important;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+    vertical-align: baseline;
+    justify-items: center;
+    position: absolute;
+}
+
+.deliver_to{
+    float: left;
+    clear: both;
+}
+
+.hack_reactor {
+    float: left;
+    clear: both;
+} 
+
+.deliver_image {
+    background-image: url(https://farmingshon.s3.us-east-2.amazonaws.com/deliver.png)!important;
+    background-size: 120px 32px;
+    width: 120px;
+    height: 32px;
+    margin-left: 10px;
+    margin-top:1px;
+}
+.deliver_image:hover {
+    margin-top: 0px;
+    margin-right: 9px;
+    margin-bottom: 0px;
+    margin-left: 9px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: red;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-left-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
 }

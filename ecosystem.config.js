@@ -6,7 +6,7 @@ module.exports = {
     deploy: {
         production: {
         user: 'ubuntu',
-        host: 'ec2-18-216-11-208.us-east-2.compute.amazonaws.com',
+        host: 'ec2-18-216-249-173.us-east-2.compute.amazonaws.com',
         key: '~/.ssh/robTest.pem',
         ref: 'origin/dev',
         repo: 'git@github.com:Amishon/Product_Description.git', 

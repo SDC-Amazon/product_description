@@ -14,8 +14,8 @@ function Footer (props) {
                 Back to top
             </span>
             <div id='footer_bar'>
-                {clickables.map((currentValue, index, array)=> (
-                    <ul key={index} id={`row${index}`} className={'row'}> {array[index].map((value, i )=> (
+                {clickables.map((currentValue, index)=> (
+                    <ul key={index} id={`row${index}`} className={'row'}> {currentValue.map((value, i )=> (
                         <li key={value} id={`header_${i}`} className={'header'}> {value}</li> 
                     ))}
                     </ul>
@@ -23,7 +23,7 @@ function Footer (props) {
             </div>
             <div className="footer_line"></div>
             <div className="footer_base">
-                <img className="footer_logo" src="https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon.png"></img>
+                <img className="footer_logo" src="https://farmingshon.s3.us-east-2.amazonaws.com/Farmazon_best.png"></img>
                 
             </div>
         </div>

@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })) 
 
-app.get('/cats', (req, res) => {
+app.get('/prodDesc', (req, res) => {
     //console.log(req.query.id)
     const id = req.query.id
     db.getItem( id, (err, data) =>  {
