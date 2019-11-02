@@ -10,6 +10,24 @@ client.connect( (err) => {
   }
 });
 
+// Batching the startup queries didn't work out for some reason ... ?
+// const startupQueries = [
+//   { query: 'CREATE KEYSPACE IF NOT EXISTS farmazon with replication = { \'class\' : \'NetworkTopologyStrategy\', \'datacenter1\' : 3 };' },
+//   { query: 'CREATE TABLE IF NOT EXISTS farmazon.pd (id int PRIMARY KEY, title text, seller text, stars int, ratings int, prime boolean, options list<text>, prices list<text>, description text);'},
+//   { query: 'USE farmazon;'}
+// ];
+// client.batch(startupQueries)
+//   .then(() => {
+//     console.log('keyspace and table started');
+//   })
+//   .catch(() => {
+//     console.error('failed keyspace and table startup');
+//   });
+
+  // create table farmazon.pd 
+  // (id int PRIMARY KEY, title text, seller text, stars int,
+  // ratings int, prime boolean, options list<text>, prices list<text>, description text);
+
   /* farmazon.pd Schema
   pd {
     id (int) [PK]
@@ -22,28 +40,75 @@ client.connect( (err) => {
     prices (list<text>)
     description (text)
   } */
-  
-  const insertRecord = (i) => {
-    const queryString = 'INSERT INTO pd (id, title, seller, \
-      stars, ratings, prime, options, prices, description) \
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
-    const values = [
-      i,
-      faker.commerce.productName(),
-      faker.company.companyName(),
-      Math.floor(Math.random() * 5),
-      Math.floor(Math.random() * 2000),
-      Boolean(Math.round(Math.random())),
-      ['S', 'M', 'L'],
-      [faker.commerce.price(), faker.commerce.price(), faker.commerce.price()],
-      faker.commerce.color()
-    ];
-    Promise.all(values)
-      .then(values => {
-        client.execute(queryString, values);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+
+// the batch method doesn't improve efficiency of the insert by any means
+// Batch is simply a way to make multiple queries at once
+// Each query will run in the same amount of time... USE JSON!
+/* const batchRecords = (i) => {
+  const query = 'INSERT INTO pd (id, title, seller, \
+    stars, ratings, prime, options, prices, description) \
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
+  const queries = [];
+  for (i; i > 0; i--) {
+    queries.push({
+      query,
+      params: [
+        i,
+        faker.commerce.productName(),
+        faker.company.companyName(),
+        Math.floor(Math.random() * 5),
+        Math.floor(Math.random() * 2000),
+        Boolean(Math.round(Math.random())),
+        ['S', 'M', 'L'],
+        [faker.commerce.price(), faker.commerce.price(), faker.commerce.price()],
+        faker.commerce.color()
+      ],
+    });
+  }
+  client.batch(queries, { prepare: true })
+    .then(() => {
+      console.log('batch complete');
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}; */
+
+
+
+
+// ~~~~~3:25PM -> 3:30PM ~ 1 Million Records
+// ~~~~~4:49PM ->
+// ~~~~~Insert 9999 per cycle
+const seedDb = (i = 0, seedCount = 1) => {
+  if (seedCount === 1000) {
+    console.log('seeding complete');
+    return;
+  }
+  let qtyStop = seedCount * 9999
+  let record = {
+    id: i,
+    title: faker.commerce.productName(),
+    seller: faker.company.companyName(),
+    stars: Math.floor(Math.random() * 5),
+    ratings: Math.floor(Math.random() * 2000),
+    prime: Boolean(Math.round(Math.random())),
+    options: ['S', 'M', 'L'],
+    prices: [faker.commerce.price(), faker.commerce.price(), faker.commerce.price()],
+    description: faker.commerce.color()
   };
-  insertRecord(12000000);
+
+  client.execute('INSERT INTO pd JSON ?;', [JSON.stringify(record)], { prepare: true })
+    .then(() => {
+      if (i <= qtyStop) {
+        seedDb(i+1, seedCount);
+      } else {
+        console.log(`${qtyStop} finished`);
+        seedDb(qtyStop+1, seedCount + 1);
+      }
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
+seedDb();
