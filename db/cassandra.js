@@ -79,13 +79,13 @@ client.connect( (err) => {
 
 // ~~~~~3:25PM -> 3:30PM ~ 1 Million Records
 // ~~~~~4:49PM ->
-// ~~~~~Insert 9999 per cycle
+// ~~~~~Insert 99999 per cycle
 const seedDb = (i = 0, seedCount = 1) => {
-  if (seedCount === 1000) {
+  if (seedCount === 2000) {
     console.log('seeding complete');
     return;
   }
-  let qtyStop = seedCount * 9999
+  let qtyStop = seedCount * 5000
   let record = {
     id: i,
     title: faker.commerce.productName(),
@@ -111,4 +111,16 @@ const seedDb = (i = 0, seedCount = 1) => {
       console.error(error);
     });
 }
-seedDb();
+// seedDb();
+
+const getItem = (productId, callback) => {
+  client.execute('SELECT * FROM pd WHERE id = ?', [productId], { prepare: true })
+    .then(results => {
+      callback(null, results);
+    })
+    .catch(error => {
+      callback(error, null);
+    });
+} 
+
+module.exports = { getItem };
