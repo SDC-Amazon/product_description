@@ -19,7 +19,23 @@ app.get('/prodDesc', (req, res) => {
         if (err) {
             res.send(err);
         } else {
-            res.send(data.rows[0]);
+            let formattedData = {
+                id: data.rows[0].id,
+                title: data.rows[0].title,
+                seller: data.rows[0].seller,
+                stars: data.rows[0].stars,
+                number_ratings: data.rows[0].ratings,
+                prime: data.rows[0].prime,
+                options: [],
+                description: [data.rows[0].description],
+            };
+            for (let i = 0; i < data.rows[0].prices.length; i++) {
+                formattedData.options.push({
+                    option: data.rows[0].options[i],
+                    price: Number(data.rows[0].prices[i])
+                });
+            }
+            res.send(formattedData);
         }
     })
 });
