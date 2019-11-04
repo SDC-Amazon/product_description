@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const db =  require('./db');
+const cassandradb = require('../db/cassandra');
 const port = 3004;
 
 const app = express();
@@ -14,11 +15,11 @@ app.use(express.urlencoded({ extended: true }))
 app.get('/prodDesc', (req, res) => {
     //console.log(req.query.id)
     const id = req.query.id
-    db.getItem( id, (err, data) =>  {
+    cassandradb.getItem( id, (err, data) =>  {
         if (err) {
-            console.log(err)
+            res.send(err);
         } else {
-            res.send(data)
+            res.send(data.rows[0]);
         }
     })
 });
