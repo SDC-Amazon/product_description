@@ -1,12 +1,14 @@
 const cassandra = require('cassandra-driver');
 const faker = require('faker');
-const client = new cassandra.Client({ contactPoints: ['localhost:9042'], localDataCenter: 'datacenter1', keyspace: 'farmazon' });
+const debug = require('debug')('anything');
+const client = new cassandra.Client({ contactPoints: ['localhost:9042'], localDataCenter: 'datacenter1', keyspace: 'test' });
 
 client.connect( (err) => {
   if (err) {
     console.error(err);
   } else {
-    console.log('connected to localhost cassandra - ');
+    debug('connected to localhost cassandra - ');
+    getItem();
   }
 });
 
@@ -81,11 +83,11 @@ client.connect( (err) => {
 // ~~~~~4:49PM ->
 // ~~~~~Insert 99999 per cycle
 const seedDb = (i = 0, seedCount = 1) => {
-  if (seedCount === 2000) {
+  if (seedCount === 100) {
     console.log('seeding complete');
     return;
   }
-  let qtyStop = seedCount * 5000
+  let qtyStop = seedCount * 99999
   let record = {
     id: i,
     title: faker.commerce.productName(),
@@ -103,7 +105,7 @@ const seedDb = (i = 0, seedCount = 1) => {
       if (i <= qtyStop) {
         seedDb(i+1, seedCount);
       } else {
-        console.log(`${qtyStop} finished`);
+        debug(`${qtyStop} finished`);
         seedDb(qtyStop+1, seedCount + 1);
       }
     })
@@ -112,8 +114,15 @@ const seedDb = (i = 0, seedCount = 1) => {
     });
 }
 // seedDb();
-
-const getItem = (productId, callback) => {
+let counter = 0;
+const getItem = (productId = 1, callback = () => {
+  console.timeEnd();
+  counter++;
+  if (counter < 100) {
+    getItem(Math.floor(Math.random() * (9989002)));
+  }
+}) => {
+  console.time();
   client.execute('SELECT * FROM pd WHERE id = ?', [productId], { prepare: true })
     .then(results => {
       callback(null, results);
@@ -121,6 +130,5 @@ const getItem = (productId, callback) => {
     .catch(error => {
       callback(error, null);
     });
-} 
-
+}
 module.exports = { getItem };
