@@ -59,9 +59,10 @@ class App extends React.Component {
 
     
     getItem() {
-        axios.get('http://ec2-18-216-249-173.us-east-2.compute.amazonaws.com/prodDesc', {params: {id: this.state.id}} )
+        axios.get('http://localhost:3004/prodDesc', {params: {id: this.state.id}} )
         .then((response)=> {
-            this.setState({item:response.data[0]})
+            console.log(response)
+            this.setState({item:response.data})
         })
         .catch(((error)=> {
             console.log(error)
